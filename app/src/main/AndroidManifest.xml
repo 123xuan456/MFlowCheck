@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mtm.flowcheck">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".manager.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/DayTheme">
+        <!-- 百度语音start -->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="18889535" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="AyE91H3yIdVdV1nNbB6Cyjk3" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="n5GfVZ46lZhzwqWK3LLjoyVXFTEwyTxR" />
+        <!-- 百度语音end -->
+
+        <activity android:name=".activity.CheckTableDetailsActivity">
+
+        </activity>
+        <activity android:name=".activity.SurveyTableActivity" />
+        <activity android:name=".activity.AudioPlayActivity"></activity>
+
+        <activity android:name=".activity.InfectionActivity"></activity>
+        <activity android:name=".activity.AreaSelectActivity">
+
+        </activity>
+        <activity android:name=".activity.MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".activity.TaskActivity" />
+        <activity android:name=".activity.EmergencyActivity" /> <!-- <activity android:name=".activity.TaskActivity" /> -->
+        <activity android:name=".activity.VersionLogActivity" />
+        <activity android:name=".activity.BaseInfomationActivity" />
+        <activity android:name=".activity.ContactUsActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SymptomActivity" />
+        <activity
+            android:name=".activity.CheckActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+
+        <service
+            android:name=".service.NFCService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/apdu_service" />
+        </service>
+        <!-- 录音服务 -->
+        <service
+            android:name="com.zlw.main.recorderlib.recorder.RecordService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".utils.printer.MicroBrotherPrinterActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|fontScale|screenSize" />
+        <activity
+            android:name=".utils.printer.Activity_BluetoothPrinterList"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|fontScale|screenSize" />
+        <activity
+            android:name=".utils.printer.Activity_Settings"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|fontScale|screenSize" /> <!-- <activity -->
+
+        <activity
+            android:name=".activity.IatDemo"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

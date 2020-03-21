@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#f1f7ff"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/footer_home_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/footer_iv_home"
+            style="@style/main_foot_iv"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/main_bottom_task_normal" />
+
+        <TextView
+            android:id="@+id/footer_text_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footer_iv_home"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_bule"
+            android:text="首页" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_analysis_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/footer_iv_analysis"
+            style="@style/main_foot_iv"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/main_bottom_emergency_normal" />
+
+        <TextView
+            android:id="@+id/footer_text_analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/footer_iv_analysis"
+            android:textColor="@color/main_gray"
+            android:text="应急指挥" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_my_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/footer_iv_my"
+            style="@style/main_foot_iv"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/main_bottom_mine_normal" />
+
+        <TextView
+            android:id="@+id/footer_text_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footer_iv_my"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/main_gray"
+            android:text="我的" />
+    </RelativeLayout>
+</LinearLayout>

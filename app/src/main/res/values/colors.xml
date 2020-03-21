@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_bule">#0670C8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <!--主页四个模块的颜色值-->
+    <color name="blue_1">#357BF0</color>
+    <color name="blue_2">#55D9F6</color>
+    <color name="yellow_1">#F3BF67</color>
+    <color name="green_1">#29E99F</color>
+    <!--下拉刷新转圈颜色-->
+    <color name="color_bule2">#5CA3E5</color>
+    <color name="color_bule3">#3598db</color>
+    <color name="mid_red">#3598db</color>
+
+    <!--白天主题-->
+    <color name="day_backgroup_color">#FFFFFFFF</color>
+    <color name="day_one_text_color">#FF000000</color>
+    <color name="day_two_text_color">#c9000000</color>
+    <color name="day_three_text_color">#8A9599</color>
+    <!--夜间主题-->
+    <color name="night_backgroup_color">#3F3F3F</color>
+    <color name="night_one_text_color">#FFbbbbbb</color>
+    <color name="night_two_text_color">#8A9599</color>
+    <color name="night_there_text_color">#8A9599</color>
+    <!-- app主色调-->
+    <color name="main_color">#0d5de2</color>
+    <color name="main_gray">#373A3F</color>
+    <color name="main_list_red_less">#8064C2FF</color>
+    <color name="black">#F2000000</color>
+    <color name="red">#de5656</color>
+    <color name="gray">#FFF0F0F0</color>
+    <color name="bg_white_gray">#f2f2f2</color>
+    <color name="dip_white">#FAFAFA</color>
+
+    <color name="alpha_45_white">#73FFFFFF</color>
+    <color name="alpha_95_white">#F2FFFFFF</color>
+
+    <color name="alpha_90_black">#E6000000</color>
+
+    <!-- 统一的字体黑色 -->
+    <color name="textBlack">#373737</color>
+
+    <color name="blackAA">#AA000000</color>
+    <color name="black33">#333333</color>
+    <color name="blackA6E">#AA6E6E6E</color>
+    <color name="black_qian">#525252</color>
+    <color name="gray_server">#BFBFBF</color>
+    <color name="gray_d5">#d9d5d5</color>
+    <color name="black_next">#6E6E6E</color>
+
+    <color name="black_text">#6E6E6E</color>
+
+    <color name="blue70">#7ba7e9</color>
+    <color name="bjddw_content_bg">#F2F2F2</color>
+    <color name="line_select">#7BBFEA</color>
+
+    <!-- 阴影立体按钮 -->
+    <color name="fbutton_color_sun_flower">#ffe991</color>
+
+
+
+    <color name="dialog_positive_color">#F64B4B</color>
+    <color name="dialog_negative_color">#F64B4B</color>
+    <color name="dialog_neutral_color">#F64B4B</color>
+
+</resources>

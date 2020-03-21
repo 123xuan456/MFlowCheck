@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.NotStartedFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/not_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/nodata_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="无检查数据"
+        android:textColor="@color/gray_d5"
+        android:textSize="@dimen/title"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>

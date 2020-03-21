@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/printer_header_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:background="@drawable/icon_small" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="5.0dip"
+            android:shadowColor="#ff4a5461"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="1.0"
+            android:singleLine="true"
+            android:text="@string/header_brother_printer"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/content_title"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:text="@string/button_refresh" />
+
+        <Button
+            android:id="@+id/btPrinterSettings"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:text="@string/button_settings" />
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/table_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:paddingTop="10dp">
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </TableRow>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginRight="5.0dip"
+        android:gravity="right"
+        android:text="欢迎您使用移动打印系统"
+        android:textColor="#ff4f4f4f"
+        android:textSize="10.0dip" />
+</LinearLayout>

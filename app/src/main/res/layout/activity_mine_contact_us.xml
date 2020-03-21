@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:paddingBottom="15dp">
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/all_title"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@id/v1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/daiBan_title"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/title" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/companyRl"
+                android:orientation="vertical">
+                <!--北石槽-->
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/textTitle"
+                    android:text="顺义北石槽办公生活区" />
+
+                <View style="@style/unit_line" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="地  址 ：北京市顺义区北石槽府前西街18号" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="邮  编 ：101300" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="电  话 ：010-84351380" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="传  真 ：010-84351380-6000" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="路  线 ：乘地铁10号线到三元桥下车，再换乘公交942路到北石槽下车" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/companyRl"
+                android:orientation="vertical">
+                <!--世奥-->
+
+                <TextView
+                    style="@style/textTitle"
+                    android:text="世奥国际中心办公室" />
+
+                <View style="@style/unit_line" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="地  址 ：北京市朝阳区芍药居北里世奥国际中心A1001-1006" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="邮  编 ：100029" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="电  话 ：010-84351380" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="传  真 ：010-84351380-6000" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="网  址 ：www.mtm2000.cn　www.mtm2000.com.cn　www.mtm2000.net" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="邮  箱 ：mtm@mtm2000.cn" />
+
+                <TextView
+                    style="@style/content_text"
+                    android:text="路  线 ：乘地铁5号线到惠新西街北口下车，再换乘公交422路、409路到育慧南路下车" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_jbxx"
+            style="@style/companyRl"
+            android:orientation="vertical">
+            <!--消息通知-->
+
+            <TextView
+                android:id="@+id/unit_title1"
+                style="@style/textTitle"
+                android:text="基本信息" />
+
+            <View style="@style/unit_line" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/unit_text"
+                android:text="1. 本软件风险预警基于风险单位的查询" />
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/unit_text"
+                android:text="2. 修改了审核待办待修改单位保存不了" />
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/unit_text"
+                android:text="3. 修复个人设置界面点击卡顿" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

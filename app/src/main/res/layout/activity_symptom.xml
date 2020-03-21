@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header_one" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/fever"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/content" />
+
+        <RadioGroup
+            android:id="@+id/symptom_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/symptom_rb_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/is"
+                android:textColor="@color/textBlack"
+                />
+
+            <RadioButton
+                android:id="@+id/symptom_rb_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/animal_heat"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/content" />
+
+        <EditText
+            android:id="@+id/symptom_et"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/t"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_chill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chill" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_hoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoose" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_cough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cough" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_rhinobyon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rhinobyon" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_running_nose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/running_nose" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_running_pharyngalgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pharyngalgia" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_headache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/headache" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_weak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weak" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_sore_muscle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sore_muscle" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_joint_sore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/joint_sore" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_anhelation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anhelation" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_dyspnea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dyspnea" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_chest_distress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chest_distress" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_stethalgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stethalgia" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_conjunctiva"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/conjunctiva" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_sick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sick" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_emesis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/emesis" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_diarrhea"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/diarrhea" />
+
+        <CheckBox
+            android:id="@+id/symptom_cbox_stomachache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/stomachache" />
+
+        <TextView
+            android:id="@+id/symptom_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/rest"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/content" />
+
+        <EditText
+            android:id="@+id/symptom_et_other"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>
